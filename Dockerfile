@@ -1,6 +1,8 @@
 FROM ubuntu
 #FROM nginx:alpine
-RUN apt-get update
+RUN apt-get update && \
+    apt-get upgrade -y && \
+    apt-get install -y git
 RUN apt-get install nginx -y
 #ADD static-website-example/ /var/www/html/
 RUN git clone https://github.com/diranetafen/static-website-example.git /var/www/html/
