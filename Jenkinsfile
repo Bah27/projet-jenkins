@@ -35,6 +35,7 @@ pipeline {
               script {
                 sh '''
                     curl http://localhost | grep -q "Hello world!"
+                    sleep 5
                 '''
               }
            }
