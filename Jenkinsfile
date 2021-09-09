@@ -29,6 +29,16 @@ pipeline {
              }
           }
        }
+       stage('Test image') {
+         agent any
+         steps {
+            script {
+              sh '''
+                  curl http://localhost | grep -q "Hello world!"
+              '''
+            }
+         }
+       }
        stage('Clean container') {
           agent any
           steps {
