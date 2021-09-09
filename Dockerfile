@@ -1,6 +1,6 @@
 #FROM ubuntu
-FROM nginx:alpine
-#FROM nginx:1.21.1
+#FROM nginx:alpine
+FROM nginx:1.21.1
 RUN apt-get update && \
     apt-get upgrade -y && \
     apt-get install -y git
