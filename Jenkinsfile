@@ -33,7 +33,9 @@ pipeline {
            agent any
            steps {
               script {
-                sh 'manma27/$IMAGE_NAME --version'
+                sh '''
+                   curl http://localhost | grep -q "Hello world!"
+                '''
               }
            }
        }
