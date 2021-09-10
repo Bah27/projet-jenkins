@@ -34,7 +34,7 @@ pipeline {
            steps {
               script {
                 sh '''
-                   echo "Hello world!"
+                   curl localhost | echo "Hello world!"
                 '''
               }
            }
