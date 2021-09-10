@@ -3,6 +3,7 @@
 FROM nginx:1.21.1
 RUN apt-get update && \
     apt-get upgrade -y && \
+    apt-get install -y curl && \
     apt-get install -y git
 #RUN DEBIAN_FRONTEND=noninteractive apt-get install -y nginx git
 #RUN rm -Rf /var/www/html/*
