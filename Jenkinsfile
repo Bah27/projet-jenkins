@@ -34,7 +34,7 @@ pipeline {
            steps {
               script {
                 sh '''
-                   grep -q "Hello world!"
+                   echo "Hello world!"
                 '''
               }
            }
